@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>Parcel Up spreadsheet – köpguide, QC och frakt till Sverige</title>
+<meta name="description" content="Använd ett Parcel Up spreadsheet för att jämföra produktlänkar, storlekar och QC-bilder. Se vad du behöver kontrollera före köp och frakt till Sverige.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:title" content="Parcel Up spreadsheet – köpguide på svenska">
+<meta property="og:description" content="Hitta produktkategorier och jämför varianter, QC-bilder och fraktvillkor.">
+<meta name="theme-color" content="#26233a">
+<!-- Sökunderlag: Googles förstasida för ”Parcel Up spreadsheet” kunde inte verifieras. Tillgängliga sökresultat användes för att identifiera teman:
+https://parcelup.net/ — spreadsheet, kategorier och QC
+https://findsindex.com/en/parcelup-spreadsheet — produktlänkar och katalog
+https://parcelup.net/shopping-agent-spreadsheet-terms.html — kalkylbladsordlista
+https://kakobuyspreadsheetfinds.com/agents/parcelup — bildreferenser och Taobao-länkar
+https://parcelup.com/about/order-procedure-service-fees — beställning, foton och avgifter
+https://parcelup.com/help — beställningsguide
+https://parcelup.com/about/payment-shipping — betalning och frakt
+https://parcelup.com/faq/order-calculation — kostnadsuppskattning
+https://parcelup.com/faq/shipping-important-information — fraktvillkor
+https://parcelup.com/terms-conditions — köp- och returvillkor
+Sekundära sökfraser: Parcel Up köpguide; Parcel Up produktlänkar; Parcel Up QC-bilder; Parcel Up frakt till Sverige.
+Longtail, sökidéer: hur fungerar Parcel Up spreadsheet; jämföra produktlänkar från Taobao; hitta originalannons från produktbild; spara produktvariant i kalkylblad; kontrollera om en produktlänk fungerar; kontrollera SKU före köp; jämföra storlekar på sneakers; mäta innersula i centimeter; välja storlek på hoodie; mäta bröstvidd på t-shirt; kontrollera ärmlängd på jacka; mäta midja på byxor; mäta huvudomkrets för keps; jämföra mått på matchande set; kontrollera storlek på matchtröja; kontrollera lås på halsband; begära QC-bilder av sömmar; kontrollera färg på lagerfoto; jämföra kartongvikt med skovikt; beräkna internationell frakt till Sverige; skillnad mellan paketvikt och volymvikt; räkna om inköpspris till SEK; kontrollera moms före import; jämföra frakt med och utan skokartong; kontrollera returvillkor före vidarefrakt. -->
+<style>
+:root{color-scheme:light;--ink:#26233a;--muted:#514b62;--paper:#fbf8f4;--line:#d9d0df;--soft:#eae3f6;--accent:#d9f3a7}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+.wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}a{color:inherit}a:focus-visible,summary:focus-visible{outline:3px solid #8356ba;outline-offset:4px}
+header{border-bottom:1px solid var(--line)}header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-block:.8rem}header strong{letter-spacing:.06em}header a{font-weight:650}
+h1,h2,h3,p,figure{margin:0}h1,h2,h3{line-height:1.12}h1{font-size:clamp(2.5rem,6vw,5.1rem);letter-spacing:-.06em;max-width:12ch}h2{font-size:clamp(1.65rem,3.5vw,2.65rem);letter-spacing:-.035em}h3{font-size:1.24rem}
+.hero{display:grid;grid-template-columns:1.08fr .92fr;overflow:hidden;border-radius:1.4rem;background:var(--soft);margin-top:1.4rem}
+.hero-copy{padding:clamp(1.3rem,5vw,4rem);align-self:center}.hero-copy p{max-width:49ch;margin-block:1rem}.hero figure{min-width:0;background:#f0eef0;display:grid;align-content:center;text-align:center;padding:.8rem}
+img{display:block;width:100%;height:auto}.hero img{aspect-ratio:4/3;object-fit:contain}.button{display:inline-block;padding:.7rem 1rem;border-radius:.55rem;background:var(--ink);color:white;text-decoration:none;font-weight:720}
+section{margin-block:2.4rem}section>h2{margin-bottom:.9rem}.categories{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.55rem}
+.categories a{display:flex;align-items:center;height:100%;padding:.75rem;background:white;border:1px solid var(--line);border-radius:.55rem;text-decoration:none;font-weight:650;overflow-wrap:anywhere}.categories a:hover{background:var(--accent)}
+.gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.65rem;margin-top:1rem}.gallery figure{background:#fff;border:1px solid var(--line);border-radius:.7rem;overflow:hidden}.gallery img{aspect-ratio:1;object-fit:contain;background:#efedf0}
+figcaption{color:var(--muted);font-size:.86rem;padding:.55rem .65rem}.lead{max-width:72ch;color:var(--muted)}
+.articles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}.articles article{background:#fff;border:1px solid var(--line);border-top:5px solid #a78aca;border-radius:.55rem;padding:1rem}.articles p{margin-top:.68rem}
+details{background:white;border:1px solid var(--line);border-radius:.6rem;margin-block:.55rem}summary{cursor:pointer;padding:.85rem 1rem;font-weight:700}details p{padding:0 1rem 1rem;max-width:75ch}
+footer{background:var(--ink);color:#fff;padding-block:1.4rem}footer p{max-width:78ch}
+@media(max-width:48rem){.hero{grid-template-columns:1fr 1fr}.categories{grid-template-columns:repeat(3,minmax(0,1fr))}.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.articles{grid-template-columns:1fr}}
+@media(max-width:34rem){.hero{grid-template-columns:1fr}.hero img{aspect-ratio:2/1}.categories,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "inLanguage":"sv",
+  "name":"Parcel Up spreadsheet – köpguide, QC och frakt till Sverige",
+  "mainEntity":[
+    {"@type":"Question","name":"Vad är ett Parcel Up spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Det är ett kalkylblad för att samla och jämföra produktlänkar, varianter, mått och anteckningar inför ett köp."}},
+    {"@type":"Question","name":"Vad gör jag om en produktlänk har slutat fungera?","acceptedAnswer":{"@type":"Answer","text":"Sök efter modellnamnet eller artikelnumret och kontrollera att den nya annonsen visar rätt färg, storlek och material innan du sparar länken."}},
+    {"@type":"Question","name":"Kan QC-bilder bekräfta att en vara är äkta?","acceptedAnswer":{"@type":"Answer","text":"QC-bilder hjälper dig att kontrollera synligt skick och vald variant. För en äkthetsbedömning behöver du även kontrollerbar dokumentation eller en oberoende bedömning."}},
+    {"@type":"Question","name":"Hur uppskattar jag totalkostnaden till Sverige?","acceptedAnswer":{"@type":"Answer","text":"Summera varupriset, inrikesfrakten, tjänsteavgiften och den internationella frakten. Kontrollera om moms, eventuell tull och transportörens hanteringsavgift redan ingår och lägg annars till de belopp som gäller."}}
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/trjuw/">
+</head>
+<body>
+<header>
+  <div class="wrap"><strong>Köpguiden</strong><a href="https://www.hipobuyfind.com">Till Hipobuyfind</a></div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <div class="hero-copy">
+      <h1>Parcel Up spreadsheet</h1>
+      <p>Samla produktlänkar och jämför rätt variant, mått och lagerbilder i samma kalkylblad. Här finns tio kategorier att börja med och en checklista för köp och frakt till Sverige.</p>
+      <a class="button" href="https://www.hipobuyfind.com">Öppna katalogen</a>
+    </div>
+    <figure>
+      <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/34dc620c-8c7b-42b5-bd3c-0c6c42c6ff2b/W%2BAIR%2BFORCE%2B1%2B%2707%2BNEXT%2BNATURE.png" width="592" height="592" alt="Vit Nike Air Force 1 Next Nature i låg modell" loading="eager" fetchpriority="high">
+      <figcaption>Nike Air Force 1 · referensbild från Nike</figcaption>
+    </figure>
+  </div>
+  <section aria-labelledby="categories">
+    <h2 id="categories">Kategorier i katalogen</h2>
+    <nav aria-label="Produktkategorier">
+      <ul class="categories">
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Skor</a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Huvtröjor och tröjor</a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jackor</a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Byxor och shorts</a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Huvudbonader</a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html">Matchande set</a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Underkläder</a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Matchtröjor</a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoarer</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section aria-labelledby="guides">
+    <h2 id="guides">Från produktlänk till paket</h2>
+    <div class="articles">
+      <article>
+        <h3>Produktlänkar och storlek</h3>
+        <p>Spara originalannonsen, säljarens artikelnummer, färgen och storleken på samma rad. Om du börjar med en bild, leta upp annonsen och stäm av detaljbilderna innan du väljer variant.</p>
+        <p>Jämför innersulans längd i centimeter med en sko som passar. För en huvtröja eller jacka kan du mäta bröstvidd och ärmlängd på ett liknande plagg du redan har.</p>
+      </article>
+      <article>
+        <h3>Så granskar du QC-bilder</h3>
+        <p>QC står för kvalitetskontroll. Jämför lagerbilderna med din beställning och be om en närbild om en söm, etikett eller ett lås är svårt att se. Stäm av färg och modell innan du godkänner vidarefrakt.</p>
+        <p>För kepsar är omkrets och justering användbara mått. För ett set, be om mått på båda delarna. Kontrollera returvillkoren om något avviker.</p>
+      </article>
+      <article>
+        <h3>Frakt till Sverige</h3>
+        <p>Be om paketets vikt och yttermått innan du jämför fraktalternativ. Om den valda frakttjänsten använder volymvikt kan ett skrymmande paket kosta mer att skicka trots låg faktisk vikt.</p>
+        <p>Jämför kostnader i SEK med samma växelkurs. Kontrollera vilka avgifter som ingår och om det går att välja emballage. En skokartong kan påverka både måtten och skyddet under transporten.</p>
+      </article>
+    </div>
+  </section>
+  <section aria-labelledby="images">
+    <h2 id="images">Modeller och detaljer att jämföra</h2>
+    <p class="lead">Referensbilder för modell, material och passform. Kontrollera utbud och specifikationer i den aktuella annonsen.</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://sportano.pl/img/986c30c27a3d26a3ee16c136f92f4ff5/1/9/197863232836_01-jpg/bluza-meska-nike-club-pullover-hoodie-dark-grey-heather-light-smoke-grey-white-0.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Mörkgrå Nike Club-huvtröja på modell">
+        <figcaption>Nike Club · Sportano</figcaption>
+      </figure>
+      <figure>
+        <img src="https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-journey-bandeau--M96769_PM1_Cropped%20worn%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Louis Vuitton Journey-bandeau knuten på en Speedy-väska">
+        <figcaption>Journey Bandeau · Louis Vuitton</figcaption>
+      </figure>
+      <figure>
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1738343741/833272_3HBAO_1060_003_100_1000_Light-cappellino-da-baseball-in-tessuto-gg-monogram.jpg" width="490" height="490" loading="lazy" decoding="async" alt="Gucci-keps i canvas med GG-monogram">
+        <figcaption>GG-monogramkeps · Gucci</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn1.jolicloset.com/imgr/full/2023/03/821167-1/blau-seide-hermes-carre-90-seidentucher.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Blå mönstrad Hermès Carré 90-sidenscarf">
+        <figcaption>Hermès Carré 90 · Joli Closet</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/N3523WOMZID301_SBG_E09-1?%24r9x10_raw%24=&amp;bfc=on&amp;hei=480&amp;wid=444&amp;qlt=80" width="444" height="480" loading="lazy" decoding="async" alt="Guldfärgat Dior Clair D Lune-halsband med kristaller">
+        <figcaption>Clair D Lune · Dior</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section aria-labelledby="faq">
+    <h2 id="faq">Vanliga frågor</h2>
+    <details open><summary>Vad är ett Parcel Up spreadsheet?</summary><p>Det är ett kalkylblad för att samla och jämföra produktlänkar, varianter, mått och anteckningar inför ett köp.</p></details>
+    <details><summary>Vad gör jag om en produktlänk har slutat fungera?</summary><p>Sök efter modellnamnet eller artikelnumret och kontrollera att den nya annonsen visar rätt färg, storlek och material innan du sparar länken.</p></details>
+    <details><summary>Kan QC-bilder bekräfta att en vara är äkta?</summary><p>QC-bilder hjälper dig att kontrollera synligt skick och vald variant. För en äkthetsbedömning behöver du även kontrollerbar dokumentation eller en oberoende bedömning.</p></details>
+    <details><summary>Hur uppskattar jag totalkostnaden till Sverige?</summary><p>Summera varupriset, inrikesfrakten, tjänsteavgiften och den internationella frakten. Kontrollera om moms, eventuell tull och transportörens hanteringsavgift redan ingår och lägg annars till de belopp som gäller.</p></details>
+  </section>
+</main>
+<footer><div class="wrap"><p>Fristående köpguide. Kategorilänkarna leder till Hipobuyfind. Varumärken och bilder används som produktreferenser.</p></div></footer>
+</body>
+</html>
